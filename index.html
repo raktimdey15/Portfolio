@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raktim Dey | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: linear-gradient(135deg, #7b2ff7, #f107a3);
+        color: #fff;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      header {
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        animation: fadeInDown 1s ease-in-out;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        animation: fadeInUp 1.5s ease-in-out;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .profile-pic {
+        display: block;
+        margin: 2rem auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        animation: zoomIn 1.5s ease-in-out;
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 0.5rem;
+      }
+
+      ul {
+        list-style: none;
+        line-height: 1.8;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .tab-button {
+        padding: 0.7rem 1.5rem;
+        background: #fff;
+        color: #7b2ff7;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .tab-button:hover {
+        background: #f107a3;
+        color: white;
+        transform: scale(1.05);
+      }
+
+      .tab-content {
+        display: none;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .admin-panel input,
+      .admin-panel textarea {
+        display: block;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+      }
+
+      #login-panel {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        display: none;
+      }
+
+      #login-panel button {
+        padding: 0.5rem 1.2rem;
+        background: #fff;
+        color: #7b2ff7;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #login-panel button:hover {
+        background: #f107a3;
+        color: #fff;
+      }
+
+      .preview-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+      }
+
+      .preview-box img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+      }
+       td {
+    padding: 10px 15px;
+  }
+  .ContactMail{
+    padding: 10px;
+  }
+   .ContactLD{
+    padding: 10px;
+  }
+  .ContactFB{
+    padding: 10px;
+  }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Raktim Dey</h1>
+      <p>
+        Engineering Student (EEE, AUST) · Graphics Designer · Web Developer ·
+        Tech Enthusiast
+      </p>
+    </header>
+
+    <img src="Profile.jpg" alt="Raktim Dey" class="profile-pic" />
+
+    <div class="container">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Currently, I'm an undergraduate student of Electrical and Electronic
+          Engineering (EEE) at Ahsanullah University of Science and Technology
+          (AUST). I'm very interested in Software Engineering and Programming. I
+          have great enthusiasm for machine learning and data analysis.
+          Additionally, I have skills in web development and once launched my
+          own website through web hosting. As I can develop websites, I know
+          HTML5, CSS, and JavaScript. Besides these scripting languages, I know
+          C and C++. Now, I'm an enthusiast to learn React.js. Moreover, I have
+          skills in a different area, which is Graphic Designing. I have
+          mastered Adobe Photoshop, Adobe Illustrator, and Canva. Aiming to get
+          myself into a tech giant company.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Communication, PSpice, LTSpice, Photoshop, Illustrator</li>
+          <li>C++, C Programming, HTML5, CSS, Javascript</li>
+          <li>Web Developing, MS PowerPoint, Word, Excel, Quartus</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <h4>IEEE AUST Student Branch – IASB</h4>
+            Visual and Graphics Coordinator : March 2025 - Present
+          </li>
+          <li>GM : January 2025 - Present</li>
+          <li>Future Champ 4.0 : January 2024 - Present</li>
+          <br />
+          <li>
+            <h4>AUST Innovation and Design Club - AUSTIDC</h4>
+            General Member : December 2023 - Present
+          </li>
+          <br />
+          <li>
+            <h4>AUST Debating Club - AUSTDC</h4>
+            Sub Executive Member (Admin) : Jan 2025 - Present
+          </li>
+          <li>General Member : Dec 2023 - Present</li>
+          <br />
+          <li>
+            <h4>AUST Career Development Club - AUSTCDC</h4>
+            Member : November 2023 - Present
+          </li>
+          <br />
+          <li>
+            <h4>Bangladesh Red Criscent Society - BDRCS</h4>
+            Volunteer : January 2015 - Present
+          </li>
+          <br />
+          <li>
+            <h4>AUST Photography Club - AUSTPC</h4>
+            Sub-Executive Member (GFX) : January 2025 - Present
+          </li>
+          <li>General Member : January 2025 - Present</li>
+          <br />
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><h4>Ahsanullah University of Science and Technology - AUST</h4></li>
+          <li>B.Sc in EEE (2023 - 2027)</li>
+          <br />
+          <li><h4>Ispahani Public College, Chittagong</h4></li>
+          <li>HSC, Background: Science, (2020 - 2022), GPA: 5.00</li>
+          <br />
+          <li><h4>Hazi Mohammad Mohsin Govt. High School, Chittagong</h4></li>
+          <li>SSC, Background: Science, (2014 - 2020), GPA: 5.00</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Achievements</h2>
+        <ul>
+          <li>
+            1. Qualified and Participated at the HSBC Business Case Competition
+            2025 National Round
+          </li>
+          <li>
+            2. One of the Top 3 teams at HSBC - Business Case Competition 2025
+            Intra Round
+          </li>
+          <li>
+            3. Regional Winner of Bangladesh Mathematical Olympiad (BdMO) 2022
+          </li>
+          <li>
+            4. Divisional Qualifier at Bangladesh Physics Olympiad (BdPhO) 2023
+          </li>
+        </ul>
+      </section>
+<table>
+    <thead>
+        <tr>
+            <td>
+      <div class="tabs">
+        <button class="tab-button" onclick="showTab('projects')">
+          My Projects
+        </button>
+      </div>
+
+      <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <div id="project-preview" class="preview-box">
+          <p>
+            Here are some of my works associated with IASB, AUSTPC and many more
+          </p>
+          <br />
+          <!--Upload Projects here-->
+          <img src="Projects/1 RGB.png.jpg" alt="Raktim Dey" class="Project" />
+          <img src="Projects/Action Plan 1.0.jpg" alt="Raktim Dey" class="Project" />
+          <img
+            src="Projects/Buddha Purnima.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img src="Projects/With Pic.jpg" alt="Raktim Dey" class="Project" />
+          <img
+            src="Projects/Cross banner.png"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/Eid Mubarak.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/Bring your childhood back (White).jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/Bring your childhood back.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/Nexora Logo (Black & White).jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/Nexora Logo.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/26th March 2nd one.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img src="Projects/26th March.jpg" alt="Raktim Dey" class="Project" />
+          <img
+            src="Projects/Certificate.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <p>
+            N.B: I don't own the certificate. My name is put here as a dummy.
+          </p>
+          <br />
+          <img
+            src="Projects/freepalestine.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img src="Projects/F30 Demo 2.png" alt="Raktim Dey" class="Project" />
+          <img
+            src="Projects/Front + Back .jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img src="Projects/JERSEY.png" alt="Raktim Dey" class="Project" />
+          <img src="Projects/May day HQ.jpg" alt="Raktim Dey" class="Project" />
+          <img
+            src="Projects/Ramadan Kareem.jpg"
+            alt="Raktim Dey"
+            class="Project"
+          />
+          <img
+            src="Projects/Ramadan Kareem.png"
+            alt="Raktim Dey"
+            class="Project"
+          />
+        </div>
+      </div>
+      </td>
+
+<td>
+      <div class="tabs">
+        <button class="tab-button" onclick="showTab('CVdekhao')">
+          Show CV
+        </button>
+        <div id="CVdekhao" class="tab-content">
+        <h2>CV</h2>
+        <div id="project-preview" class="preview-box">
+            <!--Update CV Here-->
+            <img src="CV/1.jpg" alt="Raktim Dey" class="CV" />
+            <img src="CV/2.jpg" alt="Raktim Dey" class="CV" />
+            <img src="CV/3.jpg" alt="Raktim Dey" class="CV" />
+</div>
+</div>
+</div>
+</td>
+<td>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('CertificateDekhao')">
+          Certificate and Licences
+        </button>
+        <div id="CertificateDekhao" class="tab-content">
+        <h2>Certificate and Licences</h2>
+        <div id="project-preview" class="preview-box">
+            <!--Upload Certificates Here-->
+            <img src="Certificates/1.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/2.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/3.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/4.jpg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/13.jpg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/5.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/6.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/7.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/8.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/9.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/10.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/11.jpeg" alt="Raktim Dey" class="Certificate" />
+            <img src="Certificates/12.jpeg" alt="Raktim Dey" class="Certificate" />
+</td>
+        </tr>
+</thead>
+</table>
+      <section>
+        <h2>Contact</h2>
+        <div class="ContactMail">
+          Email:
+          <a
+            href="mailto:raktimdey901@gmail.com"
+            style="color: #fff; text-decoration: underline"
+            >raktimdey901@gmail.com</a
+          >
+          </div>
+          <div class="ContactLD">
+          Linkedin:
+          <a
+            href="https://www.linkedin.com/in/raktimdey50/"
+            style="color: #fff; text-decoration: underline"
+            >Raktim Dey</a
+          >
+        </div>
+         <div class="ContactFB">
+          Facebook:
+          <a
+            href="https://www.facebook.com/Raktimdey"
+            style="color: #fff; text-decoration: underline"
+            >Raktim Dey</a
+          >
+        </div>
+      </section>
+
+    <footer>© <span id="year"></span> Raktim Dey. All rights reserved.</footer>
+
+    <script>
+      function showTab(tabId) {
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((el) => el.classList.remove("active"));
+        document.getElementById(tabId).classList.add("active");
+      }
+      function adminLogin() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const error = document.getElementById("login-error");
+
+        if (username === "admin" && password === "1234") {
+          document.getElementById("login-panel").style.display = "none";
+          document.getElementById("admin-panel").style.display = "block";
+          error.textContent = "";
+        } else {
+          error.textContent = "Invalid username or password";
+        }
+      }
+
+      function previewProjectImages(event) {
+        window.tempImages = event.target.files;
+      }
+
+      function addProjectEntry() {
+        const previewBox = document.getElementById("project-preview");
+        const message = document.getElementById("project-message").value;
+
+        if (!window.tempImages || window.tempImages.length === 0) return;
+
+        previewBox.innerHTML = "";
+
+        Array.from(window.tempImages).forEach((file) => {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            const container = document.createElement("div");
+            const img = document.createElement("img");
+            img.src = e.target.result;
+
+            const msg = document.createElement("p");
+            msg.textContent = message;
+
+            container.appendChild(img);
+            container.appendChild(msg);
+            previewBox.appendChild(container);
+          };
+          reader.readAsDataURL(file);
+        });
+
+        document.getElementById("project-message").value = "";
+      }
+
+      function previewResume(input) {
+        const file = input.files[0];
+        const previewBox = document.getElementById("resume-preview");
+        if (file && file.type === "application/pdf") {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            previewBox.innerHTML = `<a href="${e.target.result}" target="_blank">Preview Resume</a> | <a href="${e.target.result}" download>Download</a>`;
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("keydown", function (e) {
+          if (e.ctrlKey && e.altKey && e.key.toLowerCase() === "a") {
+            document
+              .querySelectorAll(".tab-content")
+              .forEach((el) => el.classList.remove("active"));
+            const loginTab = document.getElementById("admin-login");
+            loginTab.classList.add("active");
+            document.getElementById("login-panel").style.display = "block";
+            console.log("Admin login panel triggered");
+          }
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>
